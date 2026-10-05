@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anshul Patel | Business Analytics & IT at Rutgers</title>
+  <meta name="description" content="Portfolio of Anshul Patel, Business Analytics and IT student at Rutgers Business School and founder of NINJ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #14213D;
+      --paper: #F5F7FA;
+      --scarlet: #CC0033;
+      --slate: #5A6478;
+      --line: #D8DEE8;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Public Sans", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    a { color: var(--scarlet); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--scarlet); outline-offset: 3px; }
+
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .wrap { display: flex; justify-content: space-between; align-items: center; padding-block: 1rem; }
+    nav .mark { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav ul a:hover { color: var(--scarlet); }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding-inline: 1.5rem; }
+    section { padding-block: 4.5rem; border-bottom: 1px solid var(--line); }
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 800; font-size: 2rem; line-height: 1.1;
+      margin-bottom: 2rem;
+    }
+
+    /* Hero */
+    #about { padding-block: 6rem 5rem; }
+    .name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 800;
+      font-size: clamp(3.25rem, 11vw, 7.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+    .name::after {
+      content: ""; display: block;
+      width: 5rem; height: 0.4rem;
+      background: var(--scarlet);
+      margin-top: 1.75rem;
+    }
+    .statement {
+      font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+      line-height: 1.4;
+      max-width: 34ch;
+      margin-top: 1.75rem;
+    }
+    .contact { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.25rem; font-weight: 600; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem; }
+    .skills h3 { font-size: 1.05rem; margin-bottom: 0.9rem; color: var(--slate); font-weight: 600; }
+    .skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skills li {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--scarlet);
+      padding: 0.35rem 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    /* Projects */
+    .project {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+      padding-block: 2rem;
+      border-top: 1px solid var(--line);
+    }
+    .project:first-of-type { border-top: none; padding-top: 0; }
+    .project h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 500; font-size: 1.4rem; line-height: 1.2; }
+    .project .role { color: var(--slate); font-size: 0.95rem; margin-top: 0.3rem; }
+    .project p { max-width: 60ch; }
+    .project .links { margin-top: 0.8rem; display: flex; gap: 1.25rem; font-weight: 600; font-size: 0.95rem; }
+
+    footer { padding-block: 2.5rem; color: var(--slate); font-size: 0.9rem; }
+
+    @media (max-width: 640px) {
+      nav ul { gap: 1rem; }
+      .project { grid-template-columns: 1fr; gap: 0.5rem; }
+      section { padding-block: 3.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <a class="mark" href="#about">Anshul Patel</a>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <h1 class="name">Anshul Patel</h1>
+        <p class="statement">I'm a Business Analytics and IT student at Rutgers Business School who builds and runs real digital businesses, using data to turn audiences into revenue.</p>
+        <div class="contact">
+          <!-- REPLACE these three links with your real ones -->
+          <a href="mailto:anshulpatel0515@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/anshulpatel5/">LinkedIn</a>
+          <a href="https://github.com/arp346">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div>
+            <h3>Technical</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML &amp; CSS</li>
+              <li>Git &amp; GitHub</li>
+              <li>AI tools for research</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Analytics</h3>
+            <ul>
+              <li>Business statistics</li>
+              <li>Data-driven targeting</li>
+              <li>Audience &amp; sales metrics</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Business</h3>
+            <ul>
+              <li>Digital sales</li>
+              <li>Client coaching</li>
+              <li>Sponsorship deals</li>
+              <li>Content strategy</li>
+              <li>Event operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <div>
+            <h3>NINJ</h3>
+            <p class="role">Founder &amp; Operator</p>
+          </div>
+          <div>
+            <p>A digital products and services business I built and run end to end, from product and pricing to paying customers, sponsorship contracts, and a growing social media presence.</p>
+            <div class="links">
+              <!-- REPLACE with NINJ's site or main social account -->
+              <a href="https://x.com/ninjjj1">NINJ on X</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div>
+            <h3>Blueprint LLC</h3>
+            <p class="role">Content &amp; Digital Sales</p>
+          </div>
+          <div>
+            <p>Supporting a YouTube channel with 100K+ subscribers by selling digital design assets and delivering paid one-on-one coaching to the channel's audience.</p>
+            <div class="links">
+              <!-- REPLACE with the channel link -->
+              <a href="https://www.youtube.com/@BlueprintCoC">See the channel</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Anshul Patel, Rutgers Business School Honors College</div>
+  </footer>
+
+</body>
+</html>
